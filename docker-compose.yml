@@ -6,6 +6,8 @@ services:
     image: drupal-sample
     ports:
       - 8080:80
+    build:
+      context: ./docker/
     volumes:
       - ./themes:/var/www/html/themes
 
