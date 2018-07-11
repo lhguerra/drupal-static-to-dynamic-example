@@ -7,5 +7,10 @@
 {% if content %}
   <div{{ attributes.addClass(classes) }}>
     {{ content }}
+    <nav>
+      <a href="/">Home</a>
+      <a href="/about">About me</a>
+      <a href="/contact">Contact me</a>
+    </nav>
   </div>
 {% endif %}
