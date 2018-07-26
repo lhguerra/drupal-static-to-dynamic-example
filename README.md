@@ -20,3 +20,7 @@ site" section, it will be needed later.
 and password you've chosen during the installation.
 1. Now install the `sample_theme` and set it as default in the
 `/admin/appearance` page.
+
+## Stop
+After doing whatever you want with the project, you can stop it's services by
+simply running `make stop`.

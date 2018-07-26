@@ -9,3 +9,6 @@ build:
 
 clean:
 	docker-compose down
+
+stop:
+	docker-compose stop
