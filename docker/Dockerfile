@@ -1,5 +1,17 @@
 FROM drupal:8.5.1-apache
 
+# Install dependencies.
+# ---------------------
+
+RUN apt-get update -y               \
+    && apt-get install -y           \
+    git                             \
+    --no-install-recommends         \
+    && apt-get clean                \
+    && rm -rf /var/lib/apt/lists/*  \
+    && rm -rf /tmp/*                \
+    && rm -rf /var/tmp/*
+
 # Configure Composer related environment.
 # ---------------------------------------
 
