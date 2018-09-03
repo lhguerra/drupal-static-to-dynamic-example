@@ -9,6 +9,8 @@ services:
     build:
       context: ./docker/
     volumes:
+      - ./composer.json:/var/www/html/composer.json
+      - ./composer.lock:/var/www/html/composer.lock
       - ./themes:/var/www/html/themes
       # This takes advantage of the feature in Docker that a new anonymous
       # volume (which is what we're creating here) will be initialized with the
