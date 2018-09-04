@@ -6,6 +6,7 @@ FROM drupal:8.5.1-apache
 RUN apt-get update -y               \
     && apt-get install -y           \
     git                             \
+    mysql-client                    \
     --no-install-recommends         \
     && apt-get clean                \
     && rm -rf /var/lib/apt/lists/*  \
