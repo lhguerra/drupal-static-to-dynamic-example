@@ -12,8 +12,7 @@ $ make
 You will be able to access Drupal at http://localhost:8080, then do as the
 following steps:
 
-1. Follow the installation wizard, selecting the __default installation profile__
-and __sqlite__ for the database.
+1. Follow the installation wizard, selecting the __default installation profile__.
 1. Choose a username and password pair that you will remember in the "Configure
 site" section, it will be needed later.
 1. To login to the Drupal admin, head to the `/login` page, then use the username
